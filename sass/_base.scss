@@ -1,0 +1,62 @@
+/* //////////////////////////////
+COLOR VARIABLES
+////////////////////////////// */
+
+$color-primary: rgb(172, 165, 73);
+$color-primary-light: rgb(182, 176, 98);
+$color-gray-dark: #333;
+$color-gray-md: slategray;
+$color-gray-light: #E0E3DA;
+$color-offwhite: #FFFFF3;
+$color-gray-light-2: rgb(239, 239, 239);
+
+/* //////////////////////////////
+FONT VARIABLES
+////////////////////////////// */
+
+$font-display: 'Prata', serif;
+$font-text: 'Montserrat', sans-serif;
+$font-para: 'Heebo', sans-serif;
+
+    // font-family: 'Playfair Display', serif;
+
+    // font-family: 'Playfair Display SC', serif;
+
+    // font-family: 'Prata', serif;
+
+    // font-family: 'Heebo', sans-serif;
+
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    @include respond(tab-land) {
+        font-size: 52.25%;
+    }
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+// body{
+//     background: #333;
+// }

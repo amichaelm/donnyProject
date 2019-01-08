@@ -1,0 +1,61 @@
+.heading-1 {
+    font-size: 5.5rem;
+    font-weight: 300;
+    font-family: $font-display;
+    text-align: center;
+    color: $color-gray-dark;
+}
+
+.heading-2 {
+    font-size: 4.5rem;
+    color: $color-gray-dark;
+    font-family: $font-display;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: $font-text;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: .5rem;
+    transition: .2s;
+
+    &:hover {
+        transform: scale(1.08);
+        cursor: pointer;
+    }
+
+    @include respond(phone) {
+        letter-spacing: .2rem;
+        margin-left: 2rem;
+    }
+}
+
+.occu {
+    font-family: 'Fredericka the Great';
+}
+
+.landing__buttons-btn1 {
+    color: $color-offwhite;
+}
+
+.landing__buttons-btn2 {
+    color: $color-gray-dark;
+}
+
+.photoset__date {
+    font-family: $font-text;
+    color: $color-primary-light;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    font-size: 1.2rem;
+}
+
+.photoset2__date {
+    font-family: $font-text;
+    color: $color-primary-light;
+    font-weight: 900;
+    letter-spacing: 1.4px;
+    font-size: 1.2rem;
+}

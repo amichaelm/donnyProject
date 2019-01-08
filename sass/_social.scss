@@ -1,0 +1,52 @@
+.social {
+    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 36rem;
+    left: 1.5rem;
+    background: transparent;
+    // padding: 2rem;
+    
+    @include respond(phone) {
+            left: 1.5rem;
+        }
+
+    &__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: lighten($color-gray-md, 26);
+        z-index: 5;
+        transition: all .4s;
+
+        &-box {
+            border: none;
+            height: 100%;
+            background: transparent;
+            padding: .2rem;
+            
+            &:not(:last-child) {
+                margin-bottom: 2.6rem;
+            }
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &__icon-box:nth-child(1):hover &__icon, :active {
+        fill:#d62a9d;
+    }
+    
+    &__icon-box:nth-child(2):hover &__icon {
+        fill: darken(#4F86C6, 14);
+    }
+
+    &__icon-box:nth-child(3):hover &__icon {
+        fill:#4F86C6;
+    }
+
+
+}
