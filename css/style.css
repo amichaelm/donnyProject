@@ -32,9 +32,12 @@
       @media (max-width: 37.5em) {
         .artist__container-heading {
           order: 3;
-          margin: auto;
+          align-self: flex-start;
+          margin-left: 5rem;
           margin-top: -8rem;
-          margin-bottom: 3.4rem; } }
+          margin-bottom: 3.4rem;
+          padding-right: 5rem;
+          font-size: 3rem !important; } }
     .artist__container-paragraph {
       grid-column: 3 / 7;
       grid-row: 3 / 6;
@@ -47,16 +50,20 @@
       @media (max-width: 37.5em) {
         .artist__container-paragraph {
           width: 40rem;
-          margin: auto;
           text-align: left;
           order: 3;
-          padding-bottom: 6rem; } }
+          padding-bottom: 4rem;
+          width: 78%;
+          align-self: flex-start;
+          margin-left: 5rem; } }
     .artist__container-btn {
       grid-column: 3 / 5;
       grid-row: 6 / 7; }
       @media (max-width: 37.5em) {
         .artist__container-btn {
-          order: 3; } }
+          order: 3;
+          align-self: flex-start;
+          margin-left: 5rem; } }
     .artist__container-image {
       grid-column: 8 / 10;
       grid-row: 2 / 5;

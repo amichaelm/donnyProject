@@ -37,9 +37,12 @@
             
             @include respond(phone) {
                 order: 3;
-                margin: auto;
+                align-self: flex-start;
+                margin-left: 5rem;
                 margin-top: -8rem;
                 margin-bottom: 3.4rem;
+                padding-right: 5rem;
+                font-size: 3rem !important;
             }
         }
 
@@ -55,10 +58,13 @@
 
             @include respond(phone) {
                 width: 40rem;
-                margin: auto;
+
                 text-align: left;
                 order: 3;
-                padding-bottom: 6rem;
+                padding-bottom: 4rem;
+                width: 78%;
+                align-self: flex-start;
+                margin-left: 5rem;
             }
         }
 
@@ -68,7 +74,8 @@
             
             @include respond(phone) {
                 order: 3;
-                // width: 18rem !important;
+                align-self: flex-start;
+                margin-left: 5rem;
             }
         }
 
