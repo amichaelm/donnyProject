@@ -13,7 +13,17 @@
     font-weight: lighter;
 }
 
-h3 {
+.heading-4 {
+    font-size: 1.2rem;
+    font-family: $font-para;
+    text-transform: uppercase;
+    font-weight: light;
+    color: $color-primary;
+    letter-spacing: 1.2px;
+    
+}
+
+.heading-3 {
     font-family: $font-text;
     font-size: 2rem;
     text-transform: uppercase;
@@ -46,13 +56,4 @@ h3 {
 
 .landing__buttons-btn2 {
     color: $color-gray-dark;
-}
-
-.photoset__date,
-.photoset2__date {
-    font-family: $font-text;
-    color: $color-primary-light;
-    font-weight: 900;
-    letter-spacing: 1.4px;
-    font-size: 1.2rem;
 }

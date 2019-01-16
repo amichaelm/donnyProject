@@ -321,7 +321,7 @@
 
 .photoset3 {
     grid-column: 1 / -1;
-
+    grid-row: 7 / 8;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -333,6 +333,7 @@
 
     @include respond(phone) {
         margin-top: 15rem;
+        margin-top: 20rem;
     }
     
 
@@ -374,11 +375,12 @@
 		-moz-box-shadow: -64px 1px 43px -23px rgba(0,0,0,0.22);
         box-shadow: -64px 1px 43px -23px rgba(0,0,0,0.22);
         
-        @include respond(phone) {
-            width: 90%;
-        }
+        
         @include respond(tab-port) {
             width: 40%;
+        }
+        @include respond(phone) {
+            width: 28rem;
         }
 	}
 	
@@ -406,7 +408,7 @@
 		grid-column: 3 / 8;
 		grid-row: 5 / 6;
 		font-size: 8rem;
-		font-family: Georgia;
+		// font-family: Georgia;
 		font-weight: lighter;
 		letter-spacing: 1.6px;
         color: darken(slategray, 18);
