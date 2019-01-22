@@ -22,6 +22,10 @@
         width: 128rem;
         margin: auto;
 
+        @include respond(card-break) {
+            width: 78%
+        }
+
         @include respond(tab-land) {
             height: 52rem;
             width: 85%;
@@ -178,6 +182,10 @@
         align-self: center;
         width: 128rem;
         margin: auto;
+
+        @include respond(card-break) {
+            width: 78%
+        }
 
         @include respond(tab-land) {
             height: 52rem;
@@ -348,6 +356,10 @@
         align-self: center;
         width: 128rem;
         margin: auto;
+
+        @include respond(card-break) {
+            width: 78%
+        }
 
         @include respond(tab-land) {
             height: 52rem;

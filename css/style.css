@@ -370,6 +370,9 @@ html {
     align-self: center;
     width: 128rem;
     margin: auto; }
+    @media (max-width: 91.25em) {
+      .photoset__card {
+        width: 78%; } }
     @media (max-width: 75em) {
       .photoset__card {
         height: 52rem;
@@ -493,6 +496,9 @@ html {
     align-self: center;
     width: 128rem;
     margin: auto; }
+    @media (max-width: 91.25em) {
+      .photoset2__card {
+        width: 78%; } }
     @media (max-width: 75em) {
       .photoset2__card {
         height: 52rem;
@@ -624,6 +630,9 @@ html {
     align-self: center;
     width: 128rem;
     margin: auto; }
+    @media (max-width: 91.25em) {
+      .photoset3__card {
+        width: 78%; } }
     @media (max-width: 75em) {
       .photoset3__card {
         height: 52rem;
