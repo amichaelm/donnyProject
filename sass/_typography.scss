@@ -4,6 +4,7 @@
     font-family: $font-display;
     text-align: center;
     color: $color-gray-dark;
+    text-rendering: optimizeLegibility;
 }
 
 .heading-2 {
@@ -11,6 +12,7 @@
     color: $color-gray-dark;
     font-family: $font-display;
     font-weight: lighter;
+    text-rendering: optimizeLegibility;
 }
 
 .heading-4 {
@@ -20,7 +22,7 @@
     font-weight: light;
     color: $color-primary;
     letter-spacing: 1.2px;
-    
+    text-rendering: optimizeLegibility;
 }
 
 .heading-3 {
@@ -30,6 +32,7 @@
     font-weight: 300;
     letter-spacing: .5rem;
     transition: .2s;
+    text-rendering: optimizeLegibility;
 
     &:hover,
     &:active,
@@ -41,6 +44,7 @@
     a {
         text-decoration: none;
         color: $color-gray-dark;
+        text-rendering: optimizeLegibility;
     }
 
     @include respond(phone) {
@@ -57,6 +61,7 @@
     font-family: $font-text;
     font-weight: lighter;
     font-size: 5rem;
+    text-rendering: optimizeLegibility;
 
     @include respond(phone) {
             font-size: 3rem;
@@ -75,8 +80,10 @@
 
 .landing__buttons-btn1 {
     color: $color-offwhite;
+    text-rendering: optimizeLegibility;
 }
 
 .landing__buttons-btn2 {
     color: $color-gray-dark;
+    text-rendering: optimizeLegibility;
 }
