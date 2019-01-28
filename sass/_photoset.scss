@@ -9,6 +9,14 @@
     // grid-template-rows: repeat(7, minmax(6rem, 1fr));
     height: 100vh;
     background: #fff;
+
+    @include respond(tab-land) {
+        margin-bottom: 20vh;
+    }
+
+    @include respond(phone) {
+        margin-bottom: 5vh;
+    }
     
 
     &__card {
@@ -170,6 +178,17 @@
     align-items: center;
     height: 100vh;
     background: #fff;
+
+    
+    
+    @include respond(tab-land) {
+        margin-bottom: 20vh;
+    }
+    
+
+    
+
+
     
 
     &__card {
