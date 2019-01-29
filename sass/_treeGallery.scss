@@ -36,7 +36,8 @@ h1 {
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 5vw);
     // background: $color-gray-md;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
     // padding: 2rem;
     align-items: flex-start;
     margin: 0 5.5rem;
