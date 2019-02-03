@@ -47,17 +47,21 @@ h1 {
         // border: 1.2rem solid $color-gray-dark;
         overflow: hidden;
         display: flex;
-        justify-items: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &:hover {
+            cursor: pointer;
+        }
         
         &-title {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             text-transform: uppercase;
             font-family: $font-text;
             letter-spacing: 3px;
             font-weight: lighter;
             position: absolute;
-            left: 7rem;
+            background: #fff;
             z-index: 10;
             visibility: hidden;
         }
@@ -65,6 +69,15 @@ h1 {
         &:hover .gallery__item-title {
             animation: fadeInLeft .4s;
             visibility: visible;
+            z-index: 10;
+        }
+
+        &-inside {
+            // height: 14rem;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: #FFF;
         }
     }
 

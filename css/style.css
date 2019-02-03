@@ -278,14 +278,17 @@ html {
 
 .navi__button {
   position: fixed;
-  top: 2rem;
-  right: 2rem;
+  top: 1.7rem;
+  right: 1.7rem;
   z-index: 200;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 4px 8px; }
+  @media (max-width: 37.5em) {
+    .navi__button {
+      right: .5rem; } }
   .navi__button:hover {
     cursor: pointer; }
 
@@ -909,21 +912,29 @@ h1 {
   .gallery__item {
     overflow: hidden;
     display: flex;
-    justify-items: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .gallery__item:hover {
+      cursor: pointer; }
     .gallery__item-title {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
       letter-spacing: 3px;
       font-weight: lighter;
       position: absolute;
-      left: 7rem;
+      background: #fff;
       z-index: 10;
       visibility: hidden; }
     .gallery__item:hover .gallery__item-title {
       animation: fadeInLeft .4s;
-      visibility: visible; }
+      visibility: visible;
+      z-index: 10; }
+    .gallery__item-inside {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #FFF; }
   .gallery__item-1 {
     grid-row: span 6;
     grid-column: span 4; }
