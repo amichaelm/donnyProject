@@ -46,7 +46,26 @@ h1 {
     &__item {
         // border: 1.2rem solid $color-gray-dark;
         overflow: hidden;
+        display: flex;
+        justify-items: center;
+        align-items: center;
         
+        &-title {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            font-family: $font-text;
+            letter-spacing: 3px;
+            font-weight: lighter;
+            position: absolute;
+            left: 7rem;
+            z-index: 10;
+            visibility: hidden;
+        }
+
+        &:hover .gallery__item-title {
+            animation: fadeInLeft .4s;
+            visibility: visible;
+        }
     }
 
     &__item-1 {
