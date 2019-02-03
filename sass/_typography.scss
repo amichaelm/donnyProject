@@ -5,24 +5,48 @@
     text-align: center;
     color: $color-gray-dark;
     text-rendering: optimizeLegibility;
+
+    
+    @include respond(tab-port) {
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    @include respond(phone) {
+        font-size: 3rem;
+    }
+}
+
+.occu {
+    font-family: $font-text;
+    font-weight: lighter;
+    font-size: 5rem;
+    text-rendering: optimizeLegibility;
+
+        @include respond(tab-port) {
+            font-size: 3.8rem;
+            max-width: 50rem;
+        }
+        @include respond(phone) {
+            font-size: 2.8rem;
+            line-height: 2rem;
+            max-width: 42rem;
+            margin: 0 2rem 20rem 2rem;
+        }
+        @include respond(tab-land) {
+            max-width: 85%;
+        }
 }
 
 .heading-2 {
-    font-size: 4.5rem;
+    font-size: 4.4rem;
     color: $color-gray-dark;
     font-family: $font-display;
     font-weight: lighter;
     text-rendering: optimizeLegibility;
-}
 
-.heading-4 {
-    font-size: 1.2rem;
-    font-family: $font-para;
-    text-transform: uppercase;
-    font-weight: light;
-    color: $color-primary;
-    letter-spacing: 1.2px;
-    text-rendering: optimizeLegibility;
+    @include respond(phone) {
+        font-size: 2.8rem;
+    }
 }
 
 .heading-3 {
@@ -57,25 +81,14 @@
     }
 }
 
-.occu {
-    font-family: $font-text;
-    font-weight: lighter;
-    font-size: 5rem;
+.heading-4 {
+    font-size: 1.2rem;
+    font-family: $font-para;
+    text-transform: uppercase;
+    font-weight: light;
+    color: $color-primary;
+    letter-spacing: 1.2px;
     text-rendering: optimizeLegibility;
-
-    @include respond(phone) {
-            font-size: 3rem;
-            line-height: 4rem;
-            max-width: 42rem;
-
-            margin: 0 2rem 20rem 2rem;
-        }
-        @include respond(tab-port) {
-            max-width: 50rem;
-        }
-        @include respond(tab-land) {
-            max-width: 85%;
-        }
 }
 
 .landing__buttons-btn1 {

@@ -45,81 +45,159 @@ h1 {
 
     &__item {
         // border: 1.2rem solid $color-gray-dark;
+        
     }
 
     &__item-1 {
         grid-row: span 6;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
 
     &__item-2 {
         grid-row: span 7;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-3 {
-        grid-row: span 6;
+        grid-row: span 3;
         grid-column: span 3;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
 
     &__item-4 {
-        grid-row: span 3;
+        grid-row: span 6;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-row: span 8;
+        }
     }
     &__item-5 {
         grid-row: span 7;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-row: span 9;
+        }
     }
     &__item-6 {
         grid-row: span 7;
         grid-column: span 3;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-row: span 13;
+        }
     }
     &__item-7 {
         grid-row: span 4;
-        grid-column: span 6;
+        grid-column: span 7;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-row: span 3;
+        }
     }
     &__item-8 {
         grid-row: span 4;
         grid-column: span 7;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-9 {
-        grid-row: span 2;
-        grid-column: span 2;
+        grid-row: span 6;
+        grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-10 {
-        grid-row: span 7;
+        grid-row: span 3;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-11 {
         grid-row: span 3;
         grid-column: span 7;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-12 {
         grid-row: span 4;
-        grid-column: span 3
+        grid-column: span 3;
+        
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-13 {
         grid-row: span 4;
         grid-column: span 3;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-14 {
         grid-row: span 4;
         grid-column: span 5;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-15 {
         grid-row: span 6;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-16 {
         grid-row: span 8;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-17 {
         grid-row: span 8;
         grid-column: span 5;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+        }
     }
     &__item-18 {
         grid-row: span 5;
         grid-column: span 4;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            height: 100%;
+        }
     }
     
 
