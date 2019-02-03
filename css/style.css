@@ -898,6 +898,8 @@ h1 {
   grid-auto-flow: dense;
   grid-gap: 1.2rem;
   margin: 0 5.5rem; }
+  .gallery__item {
+    overflow: hidden; }
   .gallery__item-1 {
     grid-row: span 6;
     grid-column: span 4; }
@@ -931,24 +933,25 @@ h1 {
         grid-column: 1 / -1;
         grid-row: span 9; } }
   .gallery__item-6 {
-    grid-row: span 7;
-    grid-column: span 3; }
+    grid-row: span 4;
+    grid-column: span 7; }
     @media (max-width: 37.5em) {
       .gallery__item-6 {
         grid-column: 1 / -1;
-        grid-row: span 13; } }
+        grid-row: span 3; } }
   .gallery__item-7 {
-    grid-row: span 4;
-    grid-column: span 7; }
+    grid-row: span 9;
+    grid-column: span 4; }
     @media (max-width: 37.5em) {
       .gallery__item-7 {
         grid-column: 1 / -1;
-        grid-row: span 3; } }
+        grid-row: span 15; } }
   .gallery__item-8 {
-    grid-row: span 4;
-    grid-column: span 7; }
+    grid-row: span 5;
+    grid-column: span 4; }
     @media (max-width: 37.5em) {
       .gallery__item-8 {
+        grid-row: span 6;
         grid-column: 1 / -1; } }
   .gallery__item-9 {
     grid-row: span 6;
@@ -969,8 +972,8 @@ h1 {
       .gallery__item-11 {
         grid-column: 1 / -1; } }
   .gallery__item-12 {
-    grid-row: span 4;
-    grid-column: span 3; }
+    grid-row: span 5;
+    grid-column: span 4; }
     @media (max-width: 37.5em) {
       .gallery__item-12 {
         grid-column: 1 / -1; } }
@@ -987,8 +990,8 @@ h1 {
       .gallery__item-14 {
         grid-column: 1 / -1; } }
   .gallery__item-15 {
-    grid-row: span 6;
-    grid-column: span 4; }
+    grid-row: span 3;
+    grid-column: span 3; }
     @media (max-width: 37.5em) {
       .gallery__item-15 {
         grid-column: 1 / -1; } }
@@ -1011,11 +1014,17 @@ h1 {
       .gallery__item-18 {
         grid-column: 1 / -1;
         height: 100%; } }
+  .gallery__item-19 {
+    grid-row: span 4;
+    grid-column: span 6; }
   .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; }
+    display: block;
+    transition: all .3s ease-in-out; }
+    .gallery__img:hover {
+      transform: scale(1.2); }
 
 .toTop {
   display: flex;

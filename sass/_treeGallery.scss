@@ -45,6 +45,7 @@ h1 {
 
     &__item {
         // border: 1.2rem solid $color-gray-dark;
+        overflow: hidden;
         
     }
 
@@ -92,16 +93,17 @@ h1 {
             grid-row: span 9;
         }
     }
-    &__item-6 {
-        grid-row: span 7;
-        grid-column: span 3;
+    // &__item-6 {
+    //     grid-row: span 7;
+    //     grid-column: span 3;
 
-        @include respond(phone) {
-            grid-column: 1 / -1;
-            grid-row: span 13;
-        }
-    }
-    &__item-7 {
+    //     @include respond(phone) {
+    //         grid-column: 1 / -1;
+    //         grid-row: span 13;
+    //     }
+    // }
+
+    &__item-6 {
         grid-row: span 4;
         grid-column: span 7;
 
@@ -110,11 +112,22 @@ h1 {
             grid-row: span 3;
         }
     }
-    &__item-8 {
-        grid-row: span 4;
-        grid-column: span 7;
+
+    &__item-7 {
+        grid-row: span 9;
+        grid-column: span 4;
 
         @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-row: span 15;
+        }
+    }
+    &__item-8 {
+        grid-row: span 5;
+        grid-column: span 4;
+
+        @include respond(phone) {
+            grid-row: span 6;
             grid-column: 1 / -1;
         }
     }
@@ -143,8 +156,8 @@ h1 {
         }
     }
     &__item-12 {
-        grid-row: span 4;
-        grid-column: span 3;
+        grid-row: span 5;
+        grid-column: span 4;
         
         @include respond(phone) {
             grid-column: 1 / -1;
@@ -167,8 +180,8 @@ h1 {
         }
     }
     &__item-15 {
-        grid-row: span 6;
-        grid-column: span 4;
+        grid-row: span 3;
+        grid-column: span 3;
 
         @include respond(phone) {
             grid-column: 1 / -1;
@@ -199,6 +212,10 @@ h1 {
             height: 100%;
         }
     }
+    &__item-19 {
+        grid-row: span 4;
+        grid-column: span 6;
+    }
     
 
     &__img {
@@ -206,6 +223,11 @@ h1 {
         height: 100%;
         object-fit: cover;
         display: block;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
