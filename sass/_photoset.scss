@@ -448,7 +448,7 @@
         
         @include respond(phone) {
             margin: 4rem 0 2rem 0;
-            font-size: 3.8rem !important;
+            // font-size: 3.8rem !important;
         }
         @include respond(tab-port) {
             margin-top: 4rem;

@@ -1,7 +1,18 @@
 @keyframes fadeInLeft {
     0% {
-		transform: translateX(-20rem);
+		transform: translateX(-40rem);
 		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInTop {
+	0% {
+		
+		opacity:0;
 	}
 	100% {
 		transform: translateX(0);

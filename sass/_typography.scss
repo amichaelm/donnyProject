@@ -21,6 +21,7 @@
     font-weight: lighter;
     font-size: 5rem;
     text-rendering: optimizeLegibility;
+    animation: fadeInRight 1s !important;
 
         @include respond(tab-port) {
             font-size: 3.8rem;

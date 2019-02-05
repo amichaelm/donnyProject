@@ -1,6 +1,13 @@
 @keyframes fadeInLeft {
   0% {
-    transform: translateX(-20rem);
+    transform: translateX(-40rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fadeInTop {
+  0% {
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -165,6 +172,51 @@ html {
   .button-primary:hover {
     background: #a7a04e;
     cursor: pointer; }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, minmax(3rem, 1fr));
+  grid-column: 1 / -1;
+  grid-row: 8 / 9;
+  height: 80vh;
+  margin: 0 6rem;
+  padding: 3rem 0; }
+  .contact__h1 {
+    grid-row: 4 / 5;
+    align-self: center;
+    font-family: "Prata", serif;
+    font-weight: bold;
+    font-size: 12rem;
+    color: #ebebeb;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility; }
+  .contact__overlap-h2 {
+    font-size: 3.4rem;
+    font-family: "Heebo", sans-serif;
+    font-weight: 300;
+    grid-row: 4 / 5;
+    grid-column: 5 / span 4;
+    align-self: flex-end; }
+  .contact__email {
+    grid-row: 6 / 7;
+    grid-column: 4 / span 4;
+    justify-self: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #b6b062;
+    transition: all .2s; }
+    .contact__email:hover {
+      transform: scale(1.1); }
+
+.footer {
+  grid-row: 9 / 10;
+  grid-column: 1 / -1;
+  height: 20vh;
+  background: #333; }
 
 .landing {
   grid-column: 1 / -1;
@@ -705,8 +757,7 @@ html {
     align-self: flex-end; }
     @media (max-width: 37.5em) {
       .photoset3__h2 {
-        margin: 4rem 0 2rem 0;
-        font-size: 3.8rem !important; } }
+        margin: 4rem 0 2rem 0; } }
     @media (max-width: 56.25em) {
       .photoset3__h2 {
         margin-top: 4rem;
@@ -809,7 +860,8 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   font-size: 5rem;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  animation: fadeInRight 1s !important; }
   @media (max-width: 56.25em) {
     .occu {
       font-size: 3.8rem;
@@ -898,7 +950,25 @@ html {
 h1 {
   grid-column: 1  /-1;
   margin: 6rem auto;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  animation: fadeInLeft 1s; }
+
+.p-container {
+  grid-column: 1 / -1;
+  height: 30vh;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .p-container .para {
+    margin: auto;
+    height: 30vh;
+    width: 60rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 3rem;
+    animation: fadeInTop 2s; }
 
 .gallery {
   grid-column: 1 / -1;
@@ -908,12 +978,16 @@ h1 {
   grid-auto-rows: 8rem;
   grid-auto-flow: dense;
   grid-gap: 1.2rem;
-  margin: 0 5.5rem; }
+  margin: 8vh 5.5rem; }
+  @media (max-width: 37.5em) {
+    .gallery {
+      margin-top: 20vh; } }
   .gallery__item {
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start; }
+    align-items: flex-start;
+    border-radius: 3px; }
     .gallery__item:hover {
       cursor: pointer; }
     .gallery__item-title {

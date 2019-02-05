@@ -27,6 +27,29 @@ h1 {
     grid-column: 1  /-1;
     margin: 6rem auto;
     text-rendering: optimizeLegibility;
+    animation: fadeInLeft 1s;
+}
+
+.p-container {
+    // background: #444;
+    grid-column: 1 / -1;
+    height: 30vh;
+    padding: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .para {
+        margin: auto;
+        height: 30vh;
+        width: 60rem;
+        font-family: $font-text;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 3rem;
+        animation: fadeInTop 2s;
+    }
 }
 
 .gallery {
@@ -36,11 +59,12 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     grid-auto-rows: 8rem;
     grid-auto-flow: dense;
-    // background: $color-gray-md;
     grid-gap: 1.2rem;
-    // padding: 2rem;
-    // align-items: flex-start;
-    margin: 0 5.5rem;
+    margin: 8vh 5.5rem;
+
+    @include respond(phone) {
+        margin-top: 20vh;
+    }
     
 
     &__item {
@@ -49,6 +73,7 @@ h1 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        border-radius: 3px;
 
         &:hover {
             cursor: pointer;
@@ -125,15 +150,6 @@ h1 {
             grid-row: span 9;
         }
     }
-    // &__item-6 {
-    //     grid-row: span 7;
-    //     grid-column: span 3;
-
-    //     @include respond(phone) {
-    //         grid-column: 1 / -1;
-    //         grid-row: span 13;
-    //     }
-    // }
 
     &__item-6 {
         grid-row: span 4;
