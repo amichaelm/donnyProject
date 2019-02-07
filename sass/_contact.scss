@@ -34,11 +34,12 @@
         grid-column: 4 / span 4;
         justify-self: center;
         font-family: $font-para;
-        font-size: 3.2rem;
-        font-weight: 300;
+        font-size: 1rem;
+        font-weight: 500;
         text-decoration: none;
-        color: $color-primary-light;
+        color: #fff;
         transition: all .2s;
+        text-rendering: optimizeLegibility;
 
         &:hover {
             transform: scale(1.1);

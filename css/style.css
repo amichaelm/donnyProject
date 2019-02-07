@@ -1,6 +1,6 @@
 @keyframes fadeInLeft {
   0% {
-    transform: translateX(-40rem);
+    transform: translateX(-5rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -164,14 +164,33 @@ html {
   background: #b6b062;
   border: 1px solid #b6b062;
   font-family: "Heebo", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-rendering: optimizeLegibility;
+  border: none !important; }
   .button-primary:hover {
     background: #a7a04e;
     cursor: pointer; }
+
+.button-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 4rem;
+  width: 24rem;
+  height: 5.6rem;
+  background: #b6b062;
+  border: 1px solid #b6b062;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-rendering: optimizeLegibility; }
 
 .contact {
   display: grid;
@@ -204,11 +223,12 @@ html {
     grid-column: 4 / span 4;
     justify-self: center;
     font-family: "Heebo", sans-serif;
-    font-size: 3.2rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
-    color: #b6b062;
-    transition: all .2s; }
+    color: #fff;
+    transition: all .2s;
+    text-rendering: optimizeLegibility; }
     .contact__email:hover {
       transform: scale(1.1); }
 
@@ -974,7 +994,8 @@ h1 {
     font-size: 1.6rem;
     text-align: center;
     line-height: 3rem;
-    animation: fadeInTop 2s; }
+    animation: fadeInTop 2s;
+    text-rendering: optimizeLegibility; }
 
 .gallery {
   grid-column: 1 / -1;
