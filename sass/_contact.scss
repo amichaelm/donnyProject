@@ -37,13 +37,24 @@
         font-size: 1rem;
         font-weight: 500;
         text-decoration: none;
-        color: #fff;
+        color: #FFF;
         transition: all .2s;
         text-rendering: optimizeLegibility;
 
         &:hover {
-            transform: scale(1.1);
+            // transform: scale(1.1);
         }
+    }
+    &__btn {
+        border-radius: 50px;
+        // background: #444;
+        height: 4rem;
+        width: 4rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
     }
 
 }

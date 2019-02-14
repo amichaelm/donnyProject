@@ -38,7 +38,7 @@ h1 {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: left;
 
     .para {
         margin: auto;
@@ -64,7 +64,7 @@ h1 {
     margin: 8vh 5.5rem;
 
     @include respond(phone) {
-        margin-top: 20vh;
+        margin: 20vh 4rem;
     }
     
 
@@ -168,7 +168,7 @@ h1 {
 
         @include respond(phone) {
             grid-column: 1 / -1;
-            grid-row: span 15;
+            grid-row: span 8;
         }
     }
     &__item-8 {
