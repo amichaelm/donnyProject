@@ -47,15 +47,13 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    bottom: -395rem;
+    // bottom: -394rem;
     right: 2.5rem;
-    background: black;
-    border-radius: 50%;
 
     &__icon {
         fill: $color-primary-light;
-        height: 10rem;
-        width: 10rem;
+        height: 5rem;
+        width: 5rem;
         z-index: 5;
 
         &-box {

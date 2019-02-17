@@ -202,14 +202,11 @@ html {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  bottom: -395rem;
-  right: 2.5rem;
-  background: black;
-  border-radius: 50%; }
+  right: 2.5rem; }
   .backToTop__icon {
     fill: #b6b062;
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
     z-index: 5; }
     .backToTop__icon-box {
       height: 100%;
@@ -1116,6 +1113,9 @@ h1 {
     .gallery__item-23 {
       grid-row: 18 / span 2;
       grid-column: 4 / span 1; }
+    .gallery__item-24 {
+      grid-row: 20 / span 3;
+      grid-column: 1 / span 1; }
     .gallery__item-title {
       font-size: 2.4rem;
       text-transform: uppercase;
