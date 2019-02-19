@@ -1,60 +1,92 @@
 .contact {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, minmax(3rem, 1fr));
+    display: flex;
     grid-column: 1 / -1;
     grid-row: 8 / 9;
-    height: 80vh;
-    // background: $color-gray-light;
+    height: 90vh;
     margin: 0 6rem;
     padding: 3rem 0;
 
-    &__h1 {
-        grid-row: 4 / 5;
-        align-self: center;
-        font-family: $font-display;
-        font-weight: bold;
-        font-size: 12rem;
-        color: rgb(235, 235, 235);
-        letter-spacing: 2px;
-        text-transform: capitalize;
-        text-rendering: optimizeLegibility;
+    @include respond(tab-land) {
+        flex-direction: column; 
+    }
+    @include respond(phone) {
+        height: 100vh;
     }
 
-    &__overlap-h2 {
-        font-size: 3.4rem;
-        font-family: $font-para;
-        font-weight: 300;
-        grid-row: 4 / 5;
-        grid-column: 5 / span 4;
-        align-self: flex-end;
-    }
-    &__email {
-        grid-row: 6 / 7;
-        grid-column: 4 / span 4;
-        justify-self: center;
-        font-family: $font-para;
-        font-size: 1rem;
-        font-weight: 500;
-        text-decoration: none;
-        color: #FFF;
-        transition: all .2s;
-        text-rendering: optimizeLegibility;
+    &__left {
+        flex-basis: 40%;
+        background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-        &:hover {
-            // transform: scale(1.1);
+        @include respond(tab-land) {
+            flex-basis: 40%;
         }
     }
-    &__btn {
-        border-radius: 50px;
-        // background: #444;
-        height: 4rem;
-        width: 4rem;
-        font-size: 2rem;
+    &__right {
+        flex-basis: 60%;
+        background: #FFF;
+        
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 1rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        @include respond(tab-land) {
+        
+        }
+    }
+    &__h1 {
+        text-transform: uppercase;
+        animation: none !important;
+
+        &:hover {
+            cursor: none !important;
+            color: black !important;
+        }
+    }
+    &__h2 {
+        margin: 0 0 3rem 8rem;
+        font-size: 4.5rem !important;
+
+        @include respond(tab-port) {
+            font-size: 3.5rem !important;
+            margin: 0;
+        }
+
+        @include respond(phone) {
+            font-size: 3rem !important;
+            margin: 0;
+            line-height: 5.5rem;
+            
+        }
+
+        .request {
+            border-bottom: 2px solid $color-primary-light;
+            padding-bottom: 1rem;
+        }
     }
 
+    &__email {
+        margin: 0 0 0 8rem;
+
+        @include respond(tab-port) {
+            margin: 0;
+        }
+        @include respond(phone) {
+            margin: 6rem 0 6rem 0;
+        }
+    }
+    &__arrow {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+
+        @include respond(tab-port) {
+            margin-left: 0;
+        }
+        @include respond(phone) {
+            margin: 4rem 0 4rem 0;
+        }
+    }
 }
