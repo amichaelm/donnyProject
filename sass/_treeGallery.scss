@@ -70,7 +70,7 @@ h1 {
     // grid-auto-rows: 8rem;
     grid-auto-flow: dense;
     grid-gap: 1.5rem;
-    padding: 0 6.2rem 0 6.2rem;
+    padding: 6.2rem;
     // margin-top: 10vh;
 
     @include respond(phone) {
@@ -254,39 +254,40 @@ h1 {
 }
 
 .footer {
-        
-    }
-
-.toTop {
     display: flex;
-    align-items: center;
-    background: transparent;
-    // padding: 2rem;
-    // bottom: 10rem;
-    // right: 10rem;
-    position: fixed;
-    background: transparent;
-    padding: 2rem;
-    
-
-    &__icon {
-        height: 3rem;
-        width: 3rem;
-        fill: lighten($color-gray-md, 26);
-        z-index: 5;
-        transition: all .4s;
-        // position: absolute;
-
-        &-box {
-            border: none;
-            height: 100%;
-            background: transparent;
-        }
-
-        &:hover {
-                cursor: pointer;
-            }
-
-    }
-    
 }
+
+// .ToTop {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     background: transparent;
+//     // padding: 2rem;
+//     // bottom: 10rem;
+//     // right: 10rem;
+//     position: fixed;
+//     background: transparent;
+//     padding: 2rem;
+    
+
+//     &__icon {
+//         height: 3rem;
+//         width: 3rem;
+//         fill: lighten($color-gray-md, 26);
+//         z-index: 5;
+//         transition: all .4s;
+//         // position: absolute;
+
+//         &-box {
+//             border: none;
+//             height: 100%;
+//             background: transparent;
+//         }
+
+//         &:hover {
+//                 cursor: pointer;
+//             }
+
+//     }
+    
+// }

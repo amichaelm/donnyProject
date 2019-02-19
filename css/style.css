@@ -199,9 +199,7 @@ html {
 
 .backToTop {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute; }
+  justify-content: center; }
   .backToTop__icon {
     fill: #b6b062;
     height: 5rem;
@@ -301,6 +299,51 @@ html {
   font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px; }
+  @media (max-width: 37.5em) {
+    .footer {
+      flex-direction: column;
+      height: 20vh; } }
+  .footer .p1 {
+    max-width: 40rem;
+    text-align: center;
+    flex-basis: 33.3%;
+    order: 2;
+    line-height: 2rem; }
+    @media (max-width: 56.25em) {
+      .footer .p1 {
+        flex-basis: 66.6%;
+        justify-self: flex-start; } }
+    @media (max-width: 37.5em) {
+      .footer .p1 {
+        padding: 0 .5rem 0 .5rem;
+        align-self: center; } }
+  .footer .p2 {
+    flex-basis: 33.3%;
+    order: 1; }
+    @media (max-width: 56.25em) {
+      .footer .p2 {
+        flex-basis: 0%; } }
+  .footer .ToTop {
+    flex-basis: 33.3%;
+    order: 3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end; }
+    @media (max-width: 37.5em) {
+      .footer .ToTop {
+        order: 1; } }
+    .footer .ToTop__icon-box {
+      display: flex;
+      justify-content: flex-end; }
+    .footer .ToTop__icon {
+      fill: #b6b062;
+      height: 5rem;
+      width: 5rem;
+      border: 2px solid #b6b062;
+      border-radius: 50%;
+      padding: 1rem;
+      transition: .1s ease-in-out; }
 
 .landing {
   grid-column: 1 / -1;
@@ -1066,7 +1109,7 @@ h1 {
   grid-template-rows: repeat(30, 5vw);
   grid-auto-flow: dense;
   grid-gap: 1.5rem;
-  padding: 0 6.2rem 0 6.2rem; }
+  padding: 6.2rem; }
   @media (max-width: 37.5em) {
     .gallery {
       display: flex;
@@ -1169,22 +1212,5 @@ h1 {
       visibility: visible;
       z-index: 10; }
 
-.toTop {
-  display: flex;
-  align-items: center;
-  background: transparent;
-  position: fixed;
-  background: transparent;
-  padding: 2rem; }
-  .toTop__icon {
-    height: 3rem;
-    width: 3rem;
-    fill: #bbc2ca;
-    z-index: 5;
-    transition: all .4s; }
-    .toTop__icon-box {
-      border: none;
-      height: 100%;
-      background: transparent; }
-    .toTop__icon:hover {
-      cursor: pointer; }
+.footer {
+  display: flex; }
