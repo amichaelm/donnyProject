@@ -1032,21 +1032,21 @@ html {
       font-size: 75%; } }
 
 h1 {
+  grid-row: 2 / 3;
   grid-column: 1  /-1;
   margin: 6rem auto;
   text-rendering: optimizeLegibility;
   animation: fadeInLeft 1s; }
 
 .p-container {
+  grid-row: 3 / 4;
   grid-column: 1 / -1;
-  height: 50vh;
-  padding: 4rem;
+  height: 30vh;
   display: flex;
   justify-content: center;
   text-align: left; }
   .p-container .para {
     margin: auto;
-    height: 30vh;
     width: 60rem;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
@@ -1054,17 +1054,19 @@ h1 {
     line-height: 3rem;
     animation: fadeInTop 2s;
     text-rendering: optimizeLegibility; }
+    @media (max-width: 37.5em) {
+      .p-container .para {
+        padding: 0 4rem 0 4rem; } }
 
 .gallery {
-  grid-row: 4 / 5;
+  grid-row: 4 / 5 !important;
   grid-column: 1 / -1;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(30, 5vw);
   grid-auto-flow: dense;
   grid-gap: 1.5rem;
-  padding: 6.2rem; }
+  padding: 0 6.2rem 0 6.2rem; }
   @media (max-width: 37.5em) {
     .gallery {
       display: flex;
@@ -1166,9 +1168,6 @@ h1 {
       animation: fadeInLeft .4s;
       visibility: visible;
       z-index: 10; }
-  .gallery .footer {
-    grid-row: 5 / 6 !important;
-    grid-column: 1 / -1 !important; }
 
 .toTop {
   display: flex;

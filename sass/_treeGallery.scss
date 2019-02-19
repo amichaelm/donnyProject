@@ -24,6 +24,7 @@ html {
 }
 
 h1 {
+    grid-row: 2 / 3;
     grid-column: 1  /-1;
     margin: 6rem auto;
     text-rendering: optimizeLegibility;
@@ -32,17 +33,18 @@ h1 {
 
 .p-container {
     // background: #444;
+    grid-row: 3 / 4;
     grid-column: 1 / -1;
-    height: 50vh;
-    padding: 4rem;
+    height: 30vh;
+    // padding: 4rem;
+    // background: lightgoldenrodyellow;
 
     display: flex;
     justify-content: center;
     text-align: left;
 
     .para {
-        margin: auto;
-        height: 30vh;
+        margin:auto;
         width: 60rem;
         font-family: $font-text;
         font-size: 1.6rem;
@@ -50,13 +52,17 @@ h1 {
         line-height: 3rem;
         animation: fadeInTop 2s;
         text-rendering: optimizeLegibility;
+
+        @include respond(phone) {
+            padding: 0 4rem 0 4rem;
+        }
     }
 }
 
 .gallery {
-    grid-row: 4 / 5;
+    grid-row: 4 / 5 !important;
     grid-column: 1 / -1;
-    height: 100vh;
+    // height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(30, 5vw);
@@ -64,8 +70,8 @@ h1 {
     // grid-auto-rows: 8rem;
     grid-auto-flow: dense;
     grid-gap: 1.5rem;
-    padding: 6.2rem;
-    // margin: 8vh 5.5rem;
+    padding: 0 6.2rem 0 6.2rem;
+    // margin-top: 10vh;
 
     @include respond(phone) {
         // margin: 20vh 4rem;
@@ -245,11 +251,11 @@ h1 {
             // background: #FFF;
         }
     }
-    .footer {
-        grid-row: 5 / 6 !important;
-        grid-column: 1 / -1 !important;
-    }
 }
+
+.footer {
+        
+    }
 
 .toTop {
     display: flex;
