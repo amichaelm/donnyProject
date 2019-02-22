@@ -2,23 +2,23 @@
     grid-row: 9 / 10;
     grid-column: 1 / -1;
     
-    height: 10vh;
+    height: 16vh;
     background: $color-gray-dark;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $color-primary-light;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: $font-text;
     letter-spacing: 2px;
 
     @include respond(phone) {
         flex-direction: column;
-        height: 20vh;
+        height: 30vh;
     }
 
     .p1 {
-        max-width: 40rem;
+        max-width: 50rem;
         text-align: center;
         flex-basis: 33.3%;
         order: 2;
@@ -52,6 +52,7 @@
 
         @include respond(phone) {
             order: 1;
+            margin: 4vh 0;
         }
 
         &__icon-box {

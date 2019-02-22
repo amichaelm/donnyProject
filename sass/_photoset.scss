@@ -70,7 +70,8 @@
 	}
 	
 	&__h1 {
-		font-weight: lighter;
+        font-weight: lighter;
+        grid-row: 1 / 2;
 		grid-column: 11 / -1;
 		align-self: flex-start;
 		justify-self: flex-end;
@@ -417,7 +418,8 @@
 	}
 	
 	&__h1 {
-		font-weight: lighter;
+        font-weight: lighter;
+        grid-row: 1 / 2;
 		grid-column: 10 / -1;
 		align-self: flex-start;
 		justify-self: flex-end;

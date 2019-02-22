@@ -1,27 +1,36 @@
 .contact {
-    display: flex;
+    grid-row: 5 / span 2;
     grid-column: 1 / -1;
-    grid-row: 8 / 9;
-    height: 90vh;
+    display: flex;
+    height: 88vh;
     margin: 0 6rem;
     padding: 3rem 0;
 
     @include respond(tab-land) {
         flex-direction: column; 
     }
-    @include respond(phone) {
-        height: 100vh;
+    @include respond(tab-port) {
+        margin: 0;
+        padding: 0 4rem;
     }
-
+    @include respond(phone) {
+        // height: 110vh; // keeps contact inside container from bleeding into container above in mobile
+    }
+e
     &__left {
         flex-basis: 40%;
         background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
-        @include respond(tab-land) {
-            flex-basis: 40%;
+        height: 100%;
+        
+        @include respond(tab-port) {
+            visibility: hidden;
+            flex-basis: 0%;
+        }
+        @include respond(phone) {
+            // flex-basis: 0%;
         }
     }
     &__right {
@@ -32,14 +41,16 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
+        padding-left: 4rem;
 
-        @include respond(tab-land) {
-        
+        @include respond(phone) {
+            margin-top: 10rem;
         }
     }
     &__h1 {
         text-transform: uppercase;
         animation: none !important;
+        align-self: flex-start !important;
 
         &:hover {
             cursor: none !important;

@@ -65,19 +65,19 @@ h1 {
     // height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(30, 5vw);
+    grid-template-rows: repeat(35, 5vw);
     // grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     // grid-auto-rows: 8rem;
     grid-auto-flow: dense;
     grid-gap: 1.5rem;
     padding: 6.2rem;
-    // margin-top: 10vh;
 
     @include respond(phone) {
         // margin: 20vh 4rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 16vh;
     }
 
     &__img {
@@ -205,26 +205,66 @@ h1 {
             grid-column: 1 / span 1;
         }
         &-25 {
-
+            grid-row: 20 / span 6;
+            grid-column: 4 / span 2;
         }
         &-26 {
-
+            grid-row: 18 / span 2;
+            grid-column: 5 / span 1
         }
         &-27 {
-
+            grid-row: 20 / span 2;
+            grid-column: 2 / span 2;
         }
         &-28 {
-
+            grid-row: 23 / span 2;
         }
         &-29 {
-
+            grid-row: 22 / span 5;
+            grid-column: 2 / span 2;
         }
         &-30 {
-
+            grid-row: 25 / span 6;
+            grid-column: 7 / span 2;
         }
         &-31 {
-
+            grid-row: 25 / span 3;
         }
+        &-32 {
+            grid-row: 26 / span 5;
+            grid-column: 4 / span 2;
+        }
+        &-33 {
+            grid-row: 35 / span 2;
+            grid-column: 4 / span 5;
+            object-fit: contain;
+        }
+        &-34 {
+            grid-row: 28 / span 3;
+            grid-column: 1 / span 1;
+        }
+        &-35 {
+            grid-row: 31 / span 4;
+            grid-column: 4 / span 3;
+        }
+        &-36 {
+            grid-row: 27 / span 5;
+            grid-column: 2 / span 2;
+        }
+        &-37 {
+            grid-row: 32 / span 5;
+            grid-column: 1 / span 3;
+        }
+        &-38 {
+            grid-row: 25 / span 3;
+            grid-column: 6 / span 1;
+        }
+        &-39 {
+            grid-row: 28 / span 3;
+            grid-column: 6 / span 1;
+        }
+
+
         &-title {
             font-size: 2.4rem;
             text-transform: uppercase;
@@ -251,10 +291,6 @@ h1 {
             // background: #FFF;
         }
     }
-}
-
-.footer {
-    display: flex;
 }
 
 // .ToTop {
