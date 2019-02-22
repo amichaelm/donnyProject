@@ -3,7 +3,8 @@
     grid-column: 1 / -1;
     
     height: 16vh;
-    background: $color-gray-dark;
+    // background: $color-gray-dark;
+    background: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,7 @@
         order: 1;
 
         @include respond(tab-port) {
-            flex-basis: 0%;
+            flex-basis: 33.3%;
         }
     }
     .ToTop {
@@ -58,8 +59,15 @@
         &__icon-box {
             display: flex;
             justify-content: flex-end;
+
+            @include respond(phone) {
+                margin-right: 0 !important;
+            }
+            @include respond(tab-port) {
+                margin-right: 3rem;
+            }
         }
-        &__icon{
+        &__icon {
             fill: $color-primary-light;
             height: 5rem;
             width: 5rem;

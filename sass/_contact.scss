@@ -1,103 +1,99 @@
 .contact {
-    grid-row: 5 / span 2;
+    grid-row: 6 / span 2;
     grid-column: 1 / -1;
     display: flex;
     height: 88vh;
     margin: 0 6rem;
-    padding: 3rem 0;
+    padding: 6rem 0 3rem 0;
+    // background: lightblue;
 
-    @include respond(tab-land) {
-        flex-direction: column; 
-    }
     @include respond(tab-port) {
-        margin: 0;
-        padding: 0 4rem;
+        flex-direction: column;
+        height: 100vh;
     }
-    @include respond(phone) {
-        // height: 110vh; // keeps contact inside container from bleeding into container above in mobile
-    }
-e
+
+
     &__left {
-        flex-basis: 40%;
         background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: 100%;
-        
-        @include respond(tab-port) {
-            visibility: hidden;
-            flex-basis: 0%;
-        }
+        flex-basis: 40%;
+
         @include respond(phone) {
-            // flex-basis: 0%;
+            flex-basis: 0%;
+            display: hidden;
+            visibility: hidden;
+            padding: 0 !important;
+            margin: 0 !important;
         }
     }
+
     &__right {
         flex-basis: 60%;
-        background: #FFF;
-        
+        // background: lightgreen;
+
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        padding-left: 4rem;
+        margin-left: 4vw;
 
         @include respond(phone) {
-            margin-top: 10rem;
+            margin-top: 12vh;
+            margin-left: 0;
         }
-    }
-    &__h1 {
-        text-transform: uppercase;
-        animation: none !important;
-        align-self: flex-start !important;
-
-        &:hover {
-            cursor: none !important;
-            color: black !important;
-        }
-    }
-    &__h2 {
-        margin: 0 0 3rem 8rem;
-        font-size: 4.5rem !important;
-
         @include respond(tab-port) {
-            font-size: 3.5rem !important;
-            margin: 0;
+            
         }
 
-        @include respond(phone) {
-            font-size: 3rem !important;
-            margin: 0;
-            line-height: 5.5rem;
+        &--h1 {
+            letter-spacing: .2rem !important;
+            color: $color-primary-light !important;
+        }
+
+        &--h2 {
+            line-height: 8vh;
             
+
+            @include respond(phone) {
+                margin-bottom: 6rem;
+                font-size: 2.8rem !important;
+            }
+            @include respond(tab-land) {
+                
+            }
         }
 
         .request {
             border-bottom: 2px solid $color-primary-light;
             padding-bottom: 1rem;
         }
-    }
 
-    &__email {
-        margin: 0 0 0 8rem;
-
-        @include respond(tab-port) {
-            margin: 0;
+        &--email {
+            display: flex;
+            align-items: center;
+            
+            @include respond(phone) {
+                margin-bottom: 8rem;
+            }
         }
-        @include respond(phone) {
-            margin: 6rem 0 6rem 0;
+
+        &--arrow {
+            margin-left: 1rem;
+            font-size: 2rem;
+            
+        }
+
+        .backToTop__icon-box {
+            display: flex;
+            
+            &__icon {
+                // margin: 0 !important;
+
+            }
         }
     }
-    &__arrow {
-        margin-left: 1rem;
-        font-size: 1.5rem;
-
-        @include respond(tab-port) {
-            margin-left: 0;
-        }
-        @include respond(phone) {
-            margin: 4rem 0 4rem 0;
-        }
-    }
+    
 }

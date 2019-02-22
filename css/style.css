@@ -206,7 +206,6 @@ html {
     height: 5rem;
     width: 5rem;
     z-index: 5;
-    margin: 0 0 0 8rem;
     border: 2px solid #b6b062;
     border-radius: 50%;
     padding: 1rem;
@@ -221,88 +220,70 @@ html {
       background: transparent; }
 
 .contact {
-  grid-row: 5 / span 2;
+  grid-row: 6 / span 2;
   grid-column: 1 / -1;
   display: flex;
   height: 88vh;
   margin: 0 6rem;
-  padding: 3rem 0; }
-  @media (max-width: 75em) {
-    .contact {
-      flex-direction: column; } }
+  padding: 6rem 0 3rem 0; }
   @media (max-width: 56.25em) {
     .contact {
-      margin: 0;
-      padding: 0 4rem; } }
-  e
-.contact__left {
-    flex-basis: 40%;
+      flex-direction: column;
+      height: 100vh; } }
+  .contact__left {
     background-image: url("https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%; }
-    @media (max-width: 56.25em) {
-      e
-.contact__left {
+    height: 100%;
+    flex-basis: 40%; }
+    @media (max-width: 37.5em) {
+      .contact__left {
+        flex-basis: 0%;
+        display: hidden;
         visibility: hidden;
-        flex-basis: 0%; } }
+        padding: 0 !important;
+        margin: 0 !important; } }
   .contact__right {
     flex-basis: 60%;
-    background: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding-left: 4rem; }
+    margin-left: 4vw; }
     @media (max-width: 37.5em) {
       .contact__right {
-        margin-top: 10rem; } }
-  .contact__h1 {
-    text-transform: uppercase;
-    animation: none !important;
-    align-self: flex-start !important; }
-    .contact__h1:hover {
-      cursor: none !important;
-      color: black !important; }
-  .contact__h2 {
-    margin: 0 0 3rem 8rem;
-    font-size: 4.5rem !important; }
-    @media (max-width: 56.25em) {
-      .contact__h2 {
-        font-size: 3.5rem !important;
-        margin: 0; } }
-    @media (max-width: 37.5em) {
-      .contact__h2 {
-        font-size: 3rem !important;
-        margin: 0;
-        line-height: 5.5rem; } }
-    .contact__h2 .request {
+        margin-top: 12vh;
+        margin-left: 0; } }
+    .contact__right--h1 {
+      letter-spacing: .2rem !important;
+      color: #b6b062 !important; }
+    .contact__right--h2 {
+      line-height: 8vh; }
+      @media (max-width: 37.5em) {
+        .contact__right--h2 {
+          margin-bottom: 6rem;
+          font-size: 2.8rem !important; } }
+    .contact__right .request {
       border-bottom: 2px solid #b6b062;
       padding-bottom: 1rem; }
-  .contact__email {
-    margin: 0 0 0 8rem; }
-    @media (max-width: 56.25em) {
-      .contact__email {
-        margin: 0; } }
-    @media (max-width: 37.5em) {
-      .contact__email {
-        margin: 6rem 0 6rem 0; } }
-  .contact__arrow {
-    margin-left: 1rem;
-    font-size: 1.5rem; }
-    @media (max-width: 56.25em) {
-      .contact__arrow {
-        margin-left: 0; } }
-    @media (max-width: 37.5em) {
-      .contact__arrow {
-        margin: 4rem 0 4rem 0; } }
+    .contact__right--email {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 37.5em) {
+        .contact__right--email {
+          margin-bottom: 8rem; } }
+    .contact__right--arrow {
+      margin-left: 1rem;
+      font-size: 2rem; }
+    .contact__right .backToTop__icon-box {
+      display: flex; }
 
 .footer {
   grid-row: 9 / 10;
   grid-column: 1 / -1;
   height: 16vh;
-  background: #333;
+  background: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,7 +314,7 @@ html {
     order: 1; }
     @media (max-width: 56.25em) {
       .footer .p2 {
-        flex-basis: 0%; } }
+        flex-basis: 33.3%; } }
   .footer .ToTop {
     flex-basis: 33.3%;
     order: 3;
@@ -348,6 +329,12 @@ html {
     .footer .ToTop__icon-box {
       display: flex;
       justify-content: flex-end; }
+      @media (max-width: 37.5em) {
+        .footer .ToTop__icon-box {
+          margin-right: 0 !important; } }
+      @media (max-width: 56.25em) {
+        .footer .ToTop__icon-box {
+          margin-right: 3rem; } }
     .footer .ToTop__icon {
       fill: #b6b062;
       height: 5rem;
