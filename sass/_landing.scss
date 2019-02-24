@@ -21,13 +21,16 @@
         max-width: 50%;
         margin-bottom: 10rem;
         line-height: 6.5rem;
-        grid-column: 2 / 8;
+        grid-column: 2 / 8;     
 
+        .occu {
+            margin: auto;
+            // max-width: 100% !important;
+        }
 
         @include respond(phone) {
             line-height: 4rem;
             max-width: 42rem;
-
             margin: 0 2rem 20rem 2rem;
         }
         @include respond(tab-port) {
