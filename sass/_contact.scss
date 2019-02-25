@@ -11,10 +11,18 @@
         flex-direction: column;
         height: 100vh;
     }
+    @include respond(phone) {
+        // height: 120vh;
+        justify-content: center;
+    }
 
 
     &__left {
-        background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg');
+        background-image: linear-gradient(105deg,
+                          rgba($color-primary-light, .9) 0%,
+                          rgba($color-offwhite, .2) 100%,
+                          transparent 50%),    
+                          url('https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

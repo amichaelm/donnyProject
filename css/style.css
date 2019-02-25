@@ -238,8 +238,11 @@ html {
     .contact {
       flex-direction: column;
       height: 100vh; } }
+  @media (max-width: 37.5em) {
+    .contact {
+      justify-content: center; } }
   .contact__left {
-    background-image: url("https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg");
+    background-image: linear-gradient(105deg, rgba(182, 176, 98, 0.9) 0%, rgba(255, 255, 243, 0.2) 100%, transparent 50%), url("https://res.cloudinary.com/dci5hckoq/image/upload/v1550531206/pexels-photo-1905975_tv8qu1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -591,7 +594,7 @@ html {
         align-items: center;
         justify-content: center; } }
   .photoset__pic {
-    height: 64rem;
+    height: 40vh;
     -webkit-box-shadow: -64px 1px 43px -23px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: -64px 1px 43px -23px rgba(0, 0, 0, 0.22);
     box-shadow: -64px 1px 43px -23px rgba(0, 0, 0, 0.22); }
