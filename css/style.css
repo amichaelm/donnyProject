@@ -600,7 +600,8 @@ html {
     box-shadow: -64px 1px 43px -23px rgba(0, 0, 0, 0.22); }
     @media (max-width: 37.5em) {
       .photoset__pic {
-        width: 90%; } }
+        width: 90%;
+        height: 40vh; } }
     @media (max-width: 56.25em) {
       .photoset__pic {
         width: 40%; } }
