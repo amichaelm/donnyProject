@@ -1134,6 +1134,9 @@ h1 {
     object-fit: cover;
     display: block;
     transition: all .3s ease-in-out; }
+    @media (max-width: 37.5em) {
+      .gallery__img {
+        margin-top: 3rem; } }
     .gallery__img:hover {
       transform: scale(1.4); }
   .gallery__item {

@@ -87,6 +87,9 @@ h1 {
         display: block;
         transition: all .3s ease-in-out;
         
+        @include respond(phone) {
+            margin-top: 3rem;
+        }
 
         &:hover {
             transform: scale(1.4);
