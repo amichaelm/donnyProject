@@ -82,6 +82,7 @@
         &--email {
             display: flex;
             align-items: center;
+            padding: 2.8rem 6.4rem;
             
             @include respond(phone) {
                 margin-bottom: 8rem;
