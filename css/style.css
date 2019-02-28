@@ -307,6 +307,12 @@ html {
     .footer {
       flex-direction: column;
       height: 30vh; } }
+  .footer .mylink {
+    text-decoration: none !important;
+    color: #b6b062; }
+    .footer .mylink:hover {
+      color: #9c9649;
+      border-bottom: 1px solid #b6b062; }
   .footer .p1 {
     max-width: 50rem;
     text-align: center;

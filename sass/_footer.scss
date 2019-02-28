@@ -19,7 +19,14 @@
     }
 
     .mylink {
-        text-decoration: none;
+        text-decoration: none !important;
+        color: $color-primary-light;
+
+        &:hover {
+            color: darken($color: $color-primary-light, $amount: 10);
+            border-bottom: 1px solid $color-primary-light;
+        }
+
     }
 
     .p1 {
