@@ -314,11 +314,16 @@ html {
       color: #9c9649;
       border-bottom: 1px solid #b6b062; }
   .footer .p1 {
-    max-width: 50rem;
     text-align: center;
     flex-basis: 33.3%;
     order: 2;
-    line-height: 2rem; }
+    line-height: 2rem;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
     @media (max-width: 56.25em) {
       .footer .p1 {
         flex-basis: 66.6%;
@@ -329,10 +334,15 @@ html {
         align-self: center; } }
   .footer .p2 {
     flex-basis: 33.3%;
+    height: 100%;
     order: 1; }
     @media (max-width: 56.25em) {
       .footer .p2 {
         flex-basis: 33.3%; } }
+  .footer .p3 {
+    flex-basis: 33.3%;
+    height: 100%;
+    order: 3; }
   .footer .ToTop {
     flex-basis: 33.3%;
     order: 3;

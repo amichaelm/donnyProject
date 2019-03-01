@@ -30,11 +30,18 @@
     }
 
     .p1 {
-        max-width: 50rem;
+        // max-width: 50rem;
         text-align: center;
         flex-basis: 33.3%;
         order: 2;
         line-height: 2rem;
+        // background: green;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         
         @include respond(tab-port) {
             flex-basis: 66.6%;
@@ -47,11 +54,19 @@
     }
     .p2 {
         flex-basis: 33.3%;
+        height: 100%;
         order: 1;
+        // background: yellow;
 
         @include respond(tab-port) {
             flex-basis: 33.3%;
         }
+    }
+    .p3 {
+        flex-basis: 33.3%;
+        height: 100%;
+        // background: orange;
+        order: 3;
     }
     .ToTop {
         flex-basis: 33.3%;
