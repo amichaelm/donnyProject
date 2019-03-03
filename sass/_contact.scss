@@ -82,17 +82,25 @@
         &--email {
             display: flex;
             align-items: center;
+            justify-content: space-around;
             padding: 2.8rem 6.4rem;
             
             @include respond(phone) {
                 margin-bottom: 8rem;
             }
+
+            &:hover .contact__right--arrow {
+                animation-name: arrowAni;
+                animation-duration: .8s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
         }
 
         &--arrow {
-            margin-left: 1rem;
             font-size: 2rem;
-            
+            padding-left: 1rem;
+            justify-self: center;
         }
 
         .backToTop__icon-box {

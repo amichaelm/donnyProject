@@ -25,6 +25,12 @@
   100% {
     transform: rotate(360); } }
 
+@keyframes arrowAni {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(2rem); } }
+
 .artist {
   grid-row: 4 / 5;
   grid-column: 1 / -1;
@@ -281,13 +287,20 @@ html {
     .contact__right--email {
       display: flex;
       align-items: center;
+      justify-content: space-around;
       padding: 2.8rem 6.4rem; }
       @media (max-width: 37.5em) {
         .contact__right--email {
           margin-bottom: 8rem; } }
+      .contact__right--email:hover .contact__right--arrow {
+        animation-name: arrowAni;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out; }
     .contact__right--arrow {
-      margin-left: 1rem;
-      font-size: 2rem; }
+      font-size: 2rem;
+      padding-left: 1rem;
+      justify-self: center; }
     .contact__right .backToTop__icon-box {
       display: flex; }
 

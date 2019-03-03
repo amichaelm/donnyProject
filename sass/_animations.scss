@@ -37,3 +37,12 @@
 		transform: rotate(360);
 	}
 }
+
+@keyframes arrowAni {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(2rem);
+	}
+}
