@@ -1,10 +1,10 @@
 .footer {
-    grid-row: 9 / 10;
+    grid-row: 11 / 12;
     grid-column: 1 / -1;
     
-    height: 16vh;
+    height: 14vh;
     // background: $color-gray-dark;
-    background: #eee;
+    // background: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,9 @@
 
     @include respond(phone) {
         flex-direction: column;
+        height: 20vh;
+    }
+    @include respond(xs-phone) {
         height: 30vh;
     }
 
@@ -35,8 +38,7 @@
         flex-basis: 33.3%;
         order: 2;
         line-height: 2rem;
-        // background: green;
-        height: 100%;
+        // height: 100%;
         margin: auto;
         display: flex;
         align-items: center;

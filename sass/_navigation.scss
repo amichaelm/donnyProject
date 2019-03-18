@@ -81,7 +81,7 @@
         top: -2rem;
         right: -2rem;
         background: $color-gray-md;
-        z-index: 100;
+        z-index: 102;
         // transform: scale(80);
         transition: all .8s;
     }
@@ -148,6 +148,7 @@
         &:active {
             transform: translateX(1.5rem); 
         }
+
         span {
             margin-right: 1rem;
             display: inline-block; 
