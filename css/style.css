@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(auto-fit, minmax(6rem, 1fr));
-  margin-bottom: 30vh; }
+  margin-bottom: 20vh; }
   @media (max-width: 56.25em) {
     .artist {
       display: flex !important;
@@ -85,30 +85,28 @@
     color: #FFF !important;
     font-weight: light;
     font-family: Montserrat;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     font-size: 1.6rem;
     align-self: center;
     margin-top: 4rem;
     text-align: justify;
     hyphens: auto; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 75em) {
       .artist__paragraph {
-        text-align: left !important;
-        order: 3 !important;
-        align-self: flex-start !important;
-        margin-left: 5rem !important; } }
+        grid-column: 2 / span 5;
+        max-width: 70rem; } }
     @media (max-width: 56.25em) {
       .artist__paragraph {
-        text-align: left !important;
         max-width: 20rem !important;
         order: 3 !important;
         min-width: 80%;
         align-self: flex-start !important;
         margin-left: 5rem !important; } }
-    @media (max-width: 75em) {
+    @media (max-width: 37.5em) {
       .artist__paragraph {
-        grid-column: 2 / span 5;
-        max-width: 70rem; } }
+        order: 3 !important;
+        align-self: flex-start !important;
+        margin: 0 5rem !important; } }
   .artist__btn {
     grid-column: 3 / 5;
     grid-row: 5 / 6;
@@ -468,13 +466,16 @@ html {
         height: 60%; } }
     @media (max-width: 37.5em) {
       .landing__gif {
-        height: 50%; } }
+        top: 35%; } }
   .landing__buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5rem;
     margin-top: -30rem; }
+    @media (min-width: 112.5em) {
+      .landing__buttons {
+        margin-top: -30rem; } }
     @media (max-width: 56.25em) {
       .landing__buttons {
         position: absolute;
@@ -484,9 +485,9 @@ html {
         flex-direction: column;
         position: absolute;
         margin-top: -12rem; } }
-    @media (min-width: 112.5em) {
+    @media (max-width: 22.5em) {
       .landing__buttons {
-        margin-top: -30rem; } }
+        top: 80%; } }
   .landing__buttons-btn1 {
     background: #b6b062;
     border: 1px solid #b6b062;

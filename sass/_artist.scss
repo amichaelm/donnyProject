@@ -10,11 +10,8 @@
     grid-template-rows: repeat(auto-fit, minmax(6rem, 1fr));
 
     // JUST FOR CODE DESIGN DELETE WHEN DONE
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
 
-    @include respond(phone) {
-        // height: 130vh !important;
-    }
     @include respond(tab-port) {
         display: flex !important;
         justify-content: space-around;
@@ -70,31 +67,33 @@
             color: #FFF !important;
             font-weight: light;
             font-family: Montserrat;
-            line-height: 2.6rem;
+            line-height: 2.8rem;
             font-size: 1.6rem;
             align-self: center;
             margin-top: 4rem;
             text-align: justify;
             hyphens: auto;
 
-            @include respond(phone) {
-                text-align: left !important;
-                order: 3 !important;
-                // padding-bottom: 4rem !important;
-                align-self: flex-start !important;
-                margin-left: 5rem !important;
+            
+            
+            @include respond(tab-land) {
+                grid-column: 2 / span 5;
+                max-width: 70rem;
             }
             @include respond(tab-port) {
-                text-align: left !important;
+                // text-align: left !important;
                 max-width: 20rem !important;
                 order: 3 !important;
                 min-width: 80%;
                 align-self: flex-start !important;
                 margin-left: 5rem !important;
             }
-            @include respond(tab-land) {
-                grid-column: 2 / span 5;
-                max-width: 70rem;
+            @include respond(phone) {
+                // text-align: left !important;
+                order: 3 !important;
+                // padding-bottom: 4rem !important;
+                align-self: flex-start !important;
+                margin: 0 5rem !important;
             }
             
             

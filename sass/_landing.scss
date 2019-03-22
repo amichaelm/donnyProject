@@ -77,9 +77,10 @@
         }
         @include respond(tab-port) {
             height: 60%;
+
         }
         @include respond(phone) {
-            height: 50%;
+            top: 35%;
         }
     }
 
@@ -91,6 +92,9 @@
         // background: $color-gray-light;
         margin-top: -30rem;
 
+        @include respond(big-desktop) {
+            margin-top: -30rem;
+        }
         @include respond(tab-port) {
             position: absolute;
             top: 70%;
@@ -99,13 +103,11 @@
             flex-direction: column;
             position: absolute;
             margin-top: -12rem;
-            // z-index: 100;
+        }
+        @include respond(xs-phone) {
+            top: 80%;
         }
         
-
-        @include respond(big-desktop) {
-            margin-top: -30rem;
-        }
     }
 
     &__buttons-btn1 {
