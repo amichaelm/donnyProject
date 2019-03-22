@@ -463,7 +463,7 @@ html {
         height: 72%; } }
     @media (max-width: 56.25em) {
       .landing__gif {
-        height: 60%; } }
+        height: 50%; } }
     @media (max-width: 37.5em) {
       .landing__gif {
         top: 35%; } }

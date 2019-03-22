@@ -76,8 +76,7 @@
             height: 72%;
         }
         @include respond(tab-port) {
-            height: 60%;
-
+            height: 50%;
         }
         @include respond(phone) {
             top: 35%;
