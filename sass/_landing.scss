@@ -16,8 +16,7 @@
         height: 60vh !important;
     }
     @include respond(phone) {
-        height: 100vh !important;
-        // padding-bottom: 2rem;
+        height: 90vh !important;
         background-size: 60%;
     }
     

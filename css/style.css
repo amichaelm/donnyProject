@@ -413,7 +413,7 @@ html {
       height: 60vh !important; } }
   @media (max-width: 37.5em) {
     .landing {
-      height: 100vh !important;
+      height: 90vh !important;
       background-size: 60%; } }
   .landing .heading-1 {
     max-width: 50%;
