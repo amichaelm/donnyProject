@@ -74,6 +74,7 @@
             font-size: 1.6rem;
             align-self: center;
             margin-top: 4rem;
+            text-align: justify;
             hyphens: auto;
 
             @include respond(phone) {

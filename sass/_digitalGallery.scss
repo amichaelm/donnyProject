@@ -64,13 +64,13 @@ html {
         padding: 0 24% !important;
         font-family: $font-text;
         font-size: 1.6rem !important;
-        text-align: left !important;
+        text-align: justify;
+        hyphens: auto;
         line-height: 2.6rem !important;
         animation: fadeInTop 2s;
         text-rendering: optimizeLegibility;
 
         @include respond(phone) {
-            // padding: 0 4rem 0 4rem !important;
             padding: 0 6rem !important;
         }
     }

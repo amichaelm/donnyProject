@@ -89,6 +89,7 @@
     font-size: 1.6rem;
     align-self: center;
     margin-top: 4rem;
+    text-align: justify;
     hyphens: auto; }
     @media (max-width: 37.5em) {
       .artist__paragraph {
@@ -400,14 +401,19 @@ html {
 .landing {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+  display: grid;
   height: 72vh;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column; }
+  @media (max-width: 91.25em) {
+    .landing {
+      height: 60vh !important; } }
   @media (max-width: 37.5em) {
     .landing {
-      height: 90vh;
+      height: 100vh !important;
       background-size: 60%; } }
   .landing .heading-1 {
     max-width: 50%;
@@ -518,7 +524,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  grid-row: 1 / 2; }
   .navigation h3 {
     margin: auto;
     font-size: 1.4rem;
@@ -1472,7 +1479,8 @@ html {
     padding: 0 24% !important;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem !important;
-    text-align: left !important;
+    text-align: justify;
+    hyphens: auto;
     line-height: 2.6rem !important;
     animation: fadeInTop 2s;
     text-rendering: optimizeLegibility; }
@@ -1661,7 +1669,8 @@ html {
     padding: 0 24% !important;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem !important;
-    text-align: left !important;
+    text-align: justify;
+    hyphens: auto;
     line-height: 2.6rem !important;
     animation: fadeInTop 2s;
     text-rendering: optimizeLegibility; }
@@ -1809,7 +1818,8 @@ html {
     padding: 0 24% !important;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem !important;
-    text-align: left !important;
+    text-align: justify;
+    hyphens: auto;
     line-height: 2.6rem !important;
     animation: fadeInTop 2s;
     text-rendering: optimizeLegibility; }
@@ -1958,7 +1968,8 @@ html {
     padding: 0 24% !important;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem !important;
-    text-align: left !important;
+    text-align: justify;
+    hyphens: auto;
     line-height: 2.6rem !important;
     animation: fadeInTop 2s;
     text-rendering: optimizeLegibility; }
@@ -2135,7 +2146,8 @@ html {
     padding: 0 24% !important;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem !important;
-    text-align: left !important;
+    text-align: justify;
+    hyphens: auto;
     line-height: 2.6rem !important;
     animation: fadeInTop 2s;
     text-rendering: optimizeLegibility; }
