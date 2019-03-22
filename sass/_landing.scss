@@ -78,6 +78,9 @@
         @include respond(tab-port) {
             height: 60%;
         }
+        @include respond(phone) {
+            height: 50%;
+        }
     }
 
     &__buttons {

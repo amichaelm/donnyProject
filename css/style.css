@@ -466,6 +466,9 @@ html {
     @media (max-width: 56.25em) {
       .landing__gif {
         height: 60%; } }
+    @media (max-width: 37.5em) {
+      .landing__gif {
+        height: 50%; } }
   .landing__buttons {
     display: flex;
     align-items: center;
@@ -1470,10 +1473,10 @@ html {
       height: 30vh !important; } }
   @media (max-width: 37.5em) {
     .tp-container {
-      height: 90vh !important; } }
+      height: 70vh !important; } }
   @media (max-width: 22.5em) {
     .tp-container {
-      height: 138vh !important; } }
+      height: 90vh !important; } }
   .tp-container .tpara {
     margin: auto !important;
     padding: 0 24% !important;

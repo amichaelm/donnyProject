@@ -10,8 +10,6 @@ html {
     font-size: 62.25%;
     box-sizing: border-box;
 
-    
-
     @include respond(tab-port) {
         font-size: 50%;
     }
@@ -54,10 +52,10 @@ html {
         height: 30vh !important;
     }
     @include respond(phone) {
-        height: 90vh !important;
+        height: 70vh !important;
     }
     @include respond(xs-phone) {
-        height: 138vh !important;
+        height: 90vh !important;
     }
     
     .tpara {
