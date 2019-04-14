@@ -116,7 +116,6 @@ html {
     
 
     &__item {
-        // border: 1.2rem solid $color-gray-dark;
         overflow: hidden;
 
         &:hover {
@@ -213,49 +212,5 @@ html {
             visibility: visible;
             z-index: 10;
         }
-
-        &-inside {
-            // height: 14rem;
-            // display: block;
-            // height: 100%;
-            // width: 100%;
-            // background: #FFF;
-            // z-index: 100;
-        }
     }
 }
-
-// .ToTop {
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-//     background: transparent;
-//     // padding: 2rem;
-//     // bottom: 10rem;
-//     // right: 10rem;
-//     position: fixed;
-//     background: transparent;
-//     padding: 2rem;
-    
-
-//     &__icon {
-//         height: 3rem;
-//         width: 3rem;
-//         fill: lighten($color-gray-md, 26);
-//         z-index: 5;
-//         transition: all .4s;
-//         // position: absolute;
-
-//         &-box {
-//             border: none;
-//             height: 100%;
-//             background: transparent;
-//         }
-
-//         &:hover {
-//                 cursor: pointer;
-//             }
-
-//     }
-    
-// }

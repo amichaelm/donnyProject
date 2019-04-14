@@ -2,11 +2,9 @@
     font-size: 6.4rem;
     font-weight: lighter;
     font-family: $font-display;
-    text-align: left !important;
     color: $color-gray-dark;
     text-rendering: optimizeLegibility;
     letter-spacing: 1px;
-    
     
     @include respond(tab-port) {
         font-size: 6rem;

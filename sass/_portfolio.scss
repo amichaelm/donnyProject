@@ -22,7 +22,7 @@ html {
     }
 }
 
-.portfolio__h1 {
+.portfolioHeading-1 {
     grid-row: 2 / 3;
     grid-column: 1  /-1;
     font-size: 6.4rem !important;
@@ -59,7 +59,7 @@ html {
         height: 90vh !important;
     }
     
-    .portfolio__container--p {
+    &__container--p {
         margin: auto !important;
         padding: 0 24% !important;
         font-family: $font-text;
@@ -77,7 +77,7 @@ html {
     }
 }
 
-.portfolio__gallery {
+.portfolio__Gallery {
     grid-row: 4 / 5;
     grid-column: 1 / -1;
 
