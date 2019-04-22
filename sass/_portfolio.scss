@@ -59,7 +59,7 @@ html {
         height: 90vh !important;
     }
     
-    &__container--p {
+    &--p {
         margin: auto !important;
         padding: 0 24% !important;
         font-family: $font-text;
@@ -68,7 +68,7 @@ html {
         hyphens: auto;
         line-height: 2.6rem !important;
         animation: fadeInTop 2s;
-        text-rendering: optimizeLegibility;
+        text-rendering: optimizeLegibility;     
 
         @include respond(phone) {
             // padding: 0 4rem 0 4rem !important;
@@ -77,7 +77,7 @@ html {
     }
 }
 
-.portfolio__Gallery {
+.portfolioGallery {
     grid-row: 4 / 5;
     grid-column: 1 / -1;
 
@@ -87,7 +87,7 @@ html {
     grid-gap: 1.5rem;
     padding: 6.2rem;
     grid-auto-flow: dense;
-    
+
     @include respond(tab-port) {
         display: flex;
         flex-direction: column;
@@ -124,35 +124,11 @@ html {
 
         &-1 {
             grid-row: span 4;
-            grid-column: span 3;
+            grid-column: span 6;
         }
         &-2 {
             grid-row: span 3;
-            grid-column: span 2;
-            
-        }
-        &-3 {
-            grid-row: span 2;
-            grid-column: span 2;
-        }
-
-
-        &-title {
-            font-size: 2.4rem;
-            text-transform: uppercase;
-            font-family: $font-text;
-            letter-spacing: 3px;
-            font-weight: lighter;
-            position: absolute;
-            background: #fff;
-            z-index: 10;
-            visibility: hidden;
-        }
-
-        &:hover .gallery__item-title {
-            animation: fadeInLeft .4s;
-            visibility: visible;
-            z-index: 10;
+            grid-column: span 2;   
         }
     }
 }
