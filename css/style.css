@@ -790,6 +790,36 @@ html {
     .portfolioGallery__item-19 {
       grid-row: span 4;
       grid-column: span 4; }
+    .portfolioGallery__item-20 {
+      grid-row: span 4;
+      grid-column: span 4; }
+    .portfolioGallery__item-21 {
+      grid-row: span 4;
+      grid-column: span 4; }
+    .portfolioGallery__item-22 {
+      grid-row: span 5;
+      grid-column: span 4; }
+    .portfolioGallery__item-23 {
+      grid-row: span 2;
+      grid-column: span 8; }
+    .portfolioGallery__item-24 {
+      grid-row: span 4;
+      grid-column: span 4; }
+    .portfolioGallery__item-25 {
+      grid-row: span 4;
+      grid-column: span 4; }
+    .portfolioGallery__item-26 {
+      grid-row: span 4;
+      grid-column: span 4; }
+    .portfolioGallery__item-27 {
+      grid-row: span 3;
+      grid-column: span 8; }
+    .portfolioGallery__item-28 {
+      grid-row: span 1;
+      grid-column: span 4; }
+    .portfolioGallery__item-29 {
+      grid-row: span 3;
+      grid-column: span 4; }
 
 @media (max-width: 37.5em) {
   .photoset, .photoset2, .photoset3, .photoset4 {
