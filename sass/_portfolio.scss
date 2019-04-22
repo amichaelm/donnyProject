@@ -50,14 +50,14 @@ html {
     justify-content: center;
 
     @include respond(tab-land) {
-        height: 30vh !important;
+        height: 10vh !important;
     }
-    @include respond(phone) {
-        height: 70vh !important;
-    }
-    @include respond(xs-phone) {
-        height: 90vh !important;
-    }
+    // @include respond(phone) {
+    //     height: 70vh !important;
+    // }
+    // @include respond(xs-phone) {
+    //     height: 90vh !important;
+    // }
     
     &--p {
         margin: auto !important;
@@ -183,6 +183,18 @@ html {
             grid-column: span 4;
         }
         &-16 {
+            grid-row: span 4;
+            grid-column: span 4;
+        }
+        &-17 {
+            grid-row: span 2;
+            grid-column: span 4;
+        }
+        &-18 {
+            grid-row: span 2;
+            grid-column: span 4;
+        }
+        &-19 {
             grid-row: span 4;
             grid-column: span 4;
         }

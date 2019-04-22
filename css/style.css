@@ -688,13 +688,7 @@ html {
   justify-content: center; }
   @media (max-width: 75em) {
     .portfolio__container {
-      height: 30vh !important; } }
-  @media (max-width: 37.5em) {
-    .portfolio__container {
-      height: 70vh !important; } }
-  @media (max-width: 22.5em) {
-    .portfolio__container {
-      height: 90vh !important; } }
+      height: 10vh !important; } }
   .portfolio__container--p {
     margin: auto !important;
     padding: 0 24% !important;
@@ -785,6 +779,15 @@ html {
       grid-row: span 3;
       grid-column: span 4; }
     .portfolioGallery__item-16 {
+      grid-row: span 4;
+      grid-column: span 4; }
+    .portfolioGallery__item-17 {
+      grid-row: span 2;
+      grid-column: span 4; }
+    .portfolioGallery__item-18 {
+      grid-row: span 2;
+      grid-column: span 4; }
+    .portfolioGallery__item-19 {
       grid-row: span 4;
       grid-column: span 4; }
 
