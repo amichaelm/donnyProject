@@ -166,5 +166,25 @@ html {
             grid-row: span 3;
             grid-column: span 3;
         }
+        &-12 {
+            grid-row: span 3;
+            grid-column: span 3;
+        }
+        &-13 {
+           grid-row: span 3;
+           grid-column: span 3; 
+        }
+        &-14 {
+            grid-row: span 3;
+            grid-column: span 3;
+        }
+        &-15 {
+            grid-row: span 3;
+            grid-column: span 4;
+        }
+        &-16 {
+            grid-row: span 4;
+            grid-column: span 4;
+        }
     }
 }

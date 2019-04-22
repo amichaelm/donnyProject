@@ -240,6 +240,10 @@ html {
       border: none;
       background: transparent; }
 
+.heart {
+  color: crimson !important;
+  font-size: 1.6rem; }
+
 .contact {
   grid-row: 9 / span 2;
   grid-column: 1 / -1;
@@ -768,6 +772,21 @@ html {
     .portfolioGallery__item-11 {
       grid-row: span 3;
       grid-column: span 3; }
+    .portfolioGallery__item-12 {
+      grid-row: span 3;
+      grid-column: span 3; }
+    .portfolioGallery__item-13 {
+      grid-row: span 3;
+      grid-column: span 3; }
+    .portfolioGallery__item-14 {
+      grid-row: span 3;
+      grid-column: span 3; }
+    .portfolioGallery__item-15 {
+      grid-row: span 3;
+      grid-column: span 4; }
+    .portfolioGallery__item-16 {
+      grid-row: span 4;
+      grid-column: span 4; }
 
 @media (max-width: 37.5em) {
   .photoset, .photoset2, .photoset3, .photoset4 {
