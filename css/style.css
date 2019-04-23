@@ -827,8 +827,8 @@ html {
       grid-row: span 3;
       grid-column: span 5; }
     .portfolioGallery__item-32 {
-      grid-row: span 4;
-      grid-column: span 4; }
+      grid-row: span 3;
+      grid-column: span 3; }
     .portfolioGallery__item-33 {
       grid-row: span 1;
       grid-column: span 2; }
@@ -844,6 +844,15 @@ html {
     .portfolioGallery__item-37 {
       grid-row: span 2;
       grid-column: span 1; }
+    .portfolioGallery__item-38 {
+      grid-row: span 1;
+      grid-column: span 5; }
+    .portfolioGallery__item-39 {
+      grid-row: span 2;
+      grid-column: span 3; }
+    .portfolioGallery__item-40 {
+      grid-row: span 2;
+      grid-column: span 3; }
 
 @media (max-width: 37.5em) {
   .photoset, .photoset2, .photoset3, .photoset4 {

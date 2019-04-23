@@ -243,8 +243,8 @@ html {
             grid-column: span 5;
         }
         &-32 {
-            grid-row: span 4;
-            grid-column: span 4;
+            grid-row: span 3;
+            grid-column: span 3;
         }
         &-33 {
             grid-row: span 1;
@@ -265,6 +265,18 @@ html {
         &-37 {
             grid-row: span 2;
             grid-column: span 1;
+        }
+        &-38 {
+            grid-row: span 1;
+            grid-column: span 5;
+        }
+        &-39 {
+            grid-row: span 2;
+            grid-column: span 3;
+        }
+        &-40 {
+            grid-row: span 2;
+            grid-column: span 3;
         }
     }
 }
