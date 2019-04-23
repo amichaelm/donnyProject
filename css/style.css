@@ -744,7 +744,7 @@ html {
       grid-column: span 3; }
     .portfolioGallery__item-4 {
       grid-row: span 4;
-      grid-column: span 3; }
+      grid-column: span 4; }
     .portfolioGallery__item-5 {
       grid-row: span 3;
       grid-column: span 3; }
@@ -822,6 +822,9 @@ html {
       grid-column: span 4; }
     .portfolioGallery__item-30 {
       grid-row: span 2;
+      grid-column: span 5; }
+    .portfolioGallery__item-31 {
+      grid-row: span 3;
       grid-column: span 5; }
     .portfolioGallery__item-32 {
       grid-row: span 4;

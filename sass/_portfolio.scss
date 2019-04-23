@@ -136,7 +136,7 @@ html {
         }
         &-4 {
             grid-row: span 4;
-            grid-column: span 3;
+            grid-column: span 4;
         }
         &-5 {
             grid-row: span 3;
@@ -242,10 +242,10 @@ html {
             grid-row: span 2;
             grid-column: span 5;
         }
-        // &-31 {
-        //     grid-row: span 3;
-        //     grid-column: span 5;
-        // }
+        &-31 {
+            grid-row: span 3;
+            grid-column: span 5;
+        }
         &-32 {
             grid-row: span 4;
             grid-column: span 4;
