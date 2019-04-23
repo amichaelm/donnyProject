@@ -735,7 +735,7 @@ html {
     overflow: hidden; }
     .portfolioGallery__item-1 {
       grid-row: span 3;
-      grid-column: span 6; }
+      grid-column: span 7; }
     .portfolioGallery__item-2 {
       grid-row: span 2;
       grid-column: span 3; }
@@ -773,11 +773,11 @@ html {
       grid-row: span 3;
       grid-column: span 3; }
     .portfolioGallery__item-14 {
-      grid-row: span 3;
-      grid-column: span 3; }
-    .portfolioGallery__item-15 {
-      grid-row: span 3;
+      grid-row: span 4;
       grid-column: span 4; }
+    .portfolioGallery__item-15 {
+      grid-row: span 4;
+      grid-column: span 5; }
     .portfolioGallery__item-16 {
       grid-row: span 4;
       grid-column: span 4; }
@@ -800,8 +800,8 @@ html {
       grid-row: span 5;
       grid-column: span 4; }
     .portfolioGallery__item-23 {
-      grid-row: span 2;
-      grid-column: span 8; }
+      grid-row: span 3;
+      grid-column: span 9; }
     .portfolioGallery__item-24 {
       grid-row: span 4;
       grid-column: span 4; }
@@ -813,12 +813,24 @@ html {
       grid-column: span 4; }
     .portfolioGallery__item-27 {
       grid-row: span 3;
-      grid-column: span 8; }
+      grid-column: span 9; }
     .portfolioGallery__item-28 {
       grid-row: span 1;
       grid-column: span 4; }
     .portfolioGallery__item-29 {
       grid-row: span 3;
+      grid-column: span 4; }
+    .portfolioGallery__item-30 {
+      grid-row: span 2;
+      grid-column: span 5; }
+    .portfolioGallery__item-32 {
+      grid-row: span 4;
+      grid-column: span 4; }
+    .portfolioGallery__item-35 {
+      grid-row: span 3;
+      grid-column: span 6; }
+    .portfolioGallery__item-36 {
+      grid-row: span 2;
       grid-column: span 4; }
 
 @media (max-width: 37.5em) {
