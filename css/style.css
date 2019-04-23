@@ -749,11 +749,11 @@ html {
       grid-row: span 3;
       grid-column: span 3; }
     .portfolioGallery__item-6 {
-      grid-row: span 3;
-      grid-column: span 3; }
+      grid-row: span 2;
+      grid-column: span 2; }
     .portfolioGallery__item-7 {
       grid-row: span 2;
-      grid-column: span 3; }
+      grid-column: span 2; }
     .portfolioGallery__item-8 {
       grid-row: span 3;
       grid-column: span 6; }
@@ -762,22 +762,22 @@ html {
       grid-column: span 5; }
     .portfolioGallery__item-10 {
       grid-row: span 1;
-      grid-column: span 6; }
+      grid-column: span 7; }
     .portfolioGallery__item-11 {
       grid-row: span 3;
       grid-column: span 3; }
     .portfolioGallery__item-12 {
-      grid-row: span 3;
-      grid-column: span 3; }
+      grid-row: span 2;
+      grid-column: span 2; }
     .portfolioGallery__item-13 {
-      grid-row: span 3;
-      grid-column: span 3; }
+      grid-row: span 4;
+      grid-column: span 4; }
     .portfolioGallery__item-14 {
       grid-row: span 4;
       grid-column: span 4; }
     .portfolioGallery__item-15 {
-      grid-row: span 4;
-      grid-column: span 5; }
+      grid-row: span 3;
+      grid-column: span 4; }
     .portfolioGallery__item-16 {
       grid-row: span 4;
       grid-column: span 4; }
@@ -809,7 +809,7 @@ html {
       grid-row: span 4;
       grid-column: span 4; }
     .portfolioGallery__item-26 {
-      grid-row: span 4;
+      grid-row: span 3;
       grid-column: span 4; }
     .portfolioGallery__item-27 {
       grid-row: span 3;
@@ -829,12 +829,21 @@ html {
     .portfolioGallery__item-32 {
       grid-row: span 4;
       grid-column: span 4; }
+    .portfolioGallery__item-33 {
+      grid-row: span 1;
+      grid-column: span 2; }
+    .portfolioGallery__item-34 {
+      grid-row: span 2;
+      grid-column: span 2; }
     .portfolioGallery__item-35 {
       grid-row: span 3;
       grid-column: span 6; }
     .portfolioGallery__item-36 {
       grid-row: span 2;
       grid-column: span 4; }
+    .portfolioGallery__item-37 {
+      grid-row: span 2;
+      grid-column: span 1; }
 
 @media (max-width: 37.5em) {
   .photoset, .photoset2, .photoset3, .photoset4 {

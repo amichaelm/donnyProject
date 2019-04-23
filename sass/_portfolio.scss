@@ -118,10 +118,6 @@ html {
     &__item {
         overflow: hidden;
 
-        // &:hover {
-        //     cursor: pointer;
-        // }
-
         &-1 {
             grid-row: span 3;
             grid-column: span 7;
@@ -143,12 +139,12 @@ html {
             grid-column: span 3;
         }
         &-6 {
-            grid-row: span 3;
-            grid-column: span 3;
+            grid-row: span 2;
+            grid-column: span 2;
         }
         &-7 {
             grid-row: span 2;
-            grid-column: span 3;
+            grid-column: span 2;
         }
         &-8 {
             grid-row: span 3;
@@ -160,27 +156,27 @@ html {
         }
         &-10 {
             grid-row: span 1;
-            grid-column: span 6;
+            grid-column: span 7;
         }
         &-11 {
             grid-row: span 3;
             grid-column: span 3;
         }
         &-12 {
-            grid-row: span 3;
-            grid-column: span 3;
+            grid-row: span 2;
+            grid-column: span 2;
         }
         &-13 {
-           grid-row: span 3;
-           grid-column: span 3; 
+           grid-row: span 4;
+           grid-column: span 4; 
         }
         &-14 {
             grid-row: span 4;
             grid-column: span 4;
         }
         &-15 {
-            grid-row: span 4;
-            grid-column: span 5;
+            grid-row: span 3;
+            grid-column: span 4;
         }
         &-16 {
             grid-row: span 4;
@@ -223,7 +219,7 @@ html {
             grid-column: span 4;
         }
         &-26 {
-            grid-row: span 4;
+            grid-row: span 3;
             grid-column: span 4;
         }
         &-27 {
@@ -250,14 +246,14 @@ html {
             grid-row: span 4;
             grid-column: span 4;
         }
-        // &-33 {
-        //     grid-row: span 1;
-        //     grid-column: span 1;
-        // }
-        // &-34 {
-        //     grid-row: span 1;
-        //     grid-column: span 1;
-        // }
+        &-33 {
+            grid-row: span 1;
+            grid-column: span 2;
+        }
+        &-34 {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
         &-35 {
             grid-row: span 3;
             grid-column: span 6;
@@ -266,9 +262,9 @@ html {
             grid-row: span 2;
             grid-column: span 4;
         }
-        // &-37 {
-        //     grid-row: span 4;
-        //     grid-column: span 4;
-        // }
+        &-37 {
+            grid-row: span 2;
+            grid-column: span 1;
+        }
     }
 }
