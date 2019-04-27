@@ -866,8 +866,14 @@ html {
       grid-row: span 2;
       grid-column: span 3; }
     .portfolioGallery__item-45 {
+      grid-row: span 3;
+      grid-column: span 5; }
+    .portfolioGallery__item-46 {
       grid-row: span 4;
-      grid-column: span 7; }
+      grid-column: span 3; }
+    .portfolioGallery__item-47 {
+      grid-row: span 4;
+      grid-column: span 4; }
 
 @media (max-width: 37.5em) {
   .photoset, .photoset2, .photoset3, .photoset4 {
